@@ -1,7 +1,6 @@
 package blog.ismoil.zaripovs.domain.repositories;
 
 import blog.ismoil.zaripovs.domain.models.response.AttachResponse;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
