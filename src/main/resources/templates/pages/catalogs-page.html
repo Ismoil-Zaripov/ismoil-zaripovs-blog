@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>Catalog</title>
+    <div th:replace="components/css"></div>
+</head>
+<body data-bs-theme="dark">
+
+<div th:replace="components/sidebar"></div>
+
+
+<main class="offset-sm-0 col-sm-12 offset-xl-1 col-xl-11">
+
+    <div th:replace="components/search-content"></div>
+    <div th:replace="components/menu-content"></div>
+
+    <!--  header  -->
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb" class="my-4">
+            <ol class="breadcrumb align-items-center py-2">
+                <li class="breadcrumb-item">
+                    <a href="/" class="fs-4 mobile-text-50">
+                        <i class="bi bi-house-fill"></i>
+                    </a>
+                </li>
+                <li class="breadcrumb-item active fs-5 mobile-text-50" aria-current="page">Catalogs</li>
+            </ol>
+        </nav>
+    </div>
+    <!--  header end  -->
+
+    <!--  catalogs  -->
+    <div class="container-fluid py-4">
+        <div class="row">
+
+            <div class="col-12 my-4 d-flex align-items-center justify-content-center">
+                <p class="fs-1 mobile-text-75">Catalogs page</p>
+            </div>
+
+            <img class=" m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 onclick="window.location.replace('/posts/java');"
+                 style="max-height: 250px; max-width: 250px;"
+                 src="/image/java-logo-v1.svg"
+                 th:src="@{/image/java-logo-v1.svg}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/scala');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class=" m-3 py-3 img-fluid col-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/scala.png"
+                 th:src="@{/image/scala.png}"
+                 alt="..."/>
+
+            <img style="max-height: 250px; max-width: 250px;"
+                 onclick="window.location.replace('/posts/csharp');"
+                 class=" m-3 py-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/cs.png"
+                 th:src="@{/image/cs.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/python');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class=" m-3 py-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="https://www.python.org/static/img/python-logo-large.c36dccadd999.png?1576869008"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/php');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class="py-3 m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/php.png"
+                 th:src="@{/image/php.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/javascript');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class=" m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/nodejs.png"
+                 th:src="@{/image/nodejs.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/spring-framework');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class=" m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/spring.png"
+                 th:src="@{/image/spring.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/akka-framework');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class=" m-3 py-5 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/akka.png"
+                 th:src="@{/image/akka.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/aspnet-framework');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class=" m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/aspnet.png"
+                 th:src="@{/image/aspnet.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/fastapi-framework');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class=" m-3 py-5 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/fastapi-logo.png"
+                 th:src="@{/image/fastapi-logo.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/laravel-framework');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class="py-2 m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/laravel.png"
+                 th:src="@{/image/laravel.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/postgresql');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class="py-5 bg-light m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/postgresql.png"
+                 th:src="@{/image/postgresql.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/mongodb');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class="py-2 bg-light m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/mongodb.png"
+                 th:src="@{/image/mongodb.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/html');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class="bg-light m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/html.png"
+                 th:src="@{/image/html.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/css');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class="bg-light m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/css.png"
+                 th:src="@{/image/css.png}"
+                 alt="..."/>
+
+            <img onclick="window.location.replace('/posts/bootstrap-css');"
+                 style="max-height: 250px; max-width: 250px;"
+                 class="py-2 bg-light m-3 img-fluid col-6 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2 border"
+                 src="/image/bootstrap-logo.png"
+                 th:src="@{/image/bootstrap-logo.png}"
+                 alt="..."/>
+
+        </div>
+    </div>
+    <!--  catalogs end  -->
+
+    <div th:replace="components/footer"></div>
+</main>
+
+<div th:replace="components/js"></div>
+
+</body>
+</html>

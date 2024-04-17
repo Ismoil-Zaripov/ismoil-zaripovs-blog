@@ -1,14 +1,14 @@
-package blog.ismoil.zaripovs.infrastructure.controllers;
+package blog.ismoil.zaripovs.application.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/galleries")
-public class GalleryController {
+@RequestMapping("/questions")
+public class QuestionController {
     @GetMapping
-    public String galleriesPage(){
-        return "galleries/galleries-page";
+    public String questionsPage(){
+        return "pages/questions-page";
     }
 }

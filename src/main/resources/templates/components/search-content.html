@@ -1,0 +1,20 @@
+<div class="offcanvas offcanvas-end"
+     xmlns:th="http://www.thymeleaf.org"
+     tabindex="-1" id="offcanvasSearch"
+     aria-labelledby="offcanvasSearchLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasSearchLabel">Search</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+        <form class="my-4 py-4" method="get" action="/search">
+            <div class="form-floating mb-3">
+                <input type="search" class="form-control" id="floatingInput" name="query">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <input type="submit" class="form-control btn btn-outline-light" value="search">
+        </form>
+
+    </div>
+</div>

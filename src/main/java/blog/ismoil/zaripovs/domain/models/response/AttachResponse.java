@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 
 public record AttachResponse(
-        Integer fileId,
-        String filename,
-        String path,
-        Long size
+        String attachName,
+        String attachUrl
 ) implements Serializable { }

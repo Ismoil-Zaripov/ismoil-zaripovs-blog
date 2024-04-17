@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: classpath:/db-migration/sql/V1__schema.sql
+  - include:
+      file: classpath:/db-migration/sql/V1__data.sql

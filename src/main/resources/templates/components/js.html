@@ -1,0 +1,20 @@
+<script>
+
+    const insertContentTag = () => {
+        let contents = document.getElementById('contents')
+        let lettersList = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
+        for (let i = 0; i < lettersList.length; i++) {
+            contents.innerHTML += `<button class='m-2 btn btn-lg btn-outline-light mobile-text-50'>${lettersList[i]}</button>`
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        insertContentTag()
+    })
+</script>
+
+<script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>

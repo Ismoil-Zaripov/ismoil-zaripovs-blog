@@ -1,0 +1,68 @@
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}"/>
+<link rel="stylesheet" th:href="@{/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.css}"/>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    @media screen and (max-width: 992px) {
+        #header {
+            display: none;
+        }
+
+        .mobile-text-100 {
+            font-size: 100px !important;
+        }
+
+        .mobile-text-75 {
+            font-size: 75px !important;
+        }
+
+        .mobile-text-50 {
+            font-size: 50px !important;
+        }
+
+        .mobile-text-25 {
+            font-size: 25px !important;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        #mobile-menu {
+            display: none;
+        }
+    }
+
+    ul li {
+        padding-top: 35%;
+        list-style: none;
+    }
+
+    .fs-1, .fs-2, .fs-3, .fs-4, .fs-5, .fs-6,
+    .display-1, .display-2, .display-3,
+    .display-4, .display-5, .display-6 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #2b2f34;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+</style>
