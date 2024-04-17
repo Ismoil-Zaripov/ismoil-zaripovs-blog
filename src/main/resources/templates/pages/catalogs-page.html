@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalog</title>
-    <div th:replace="components/css"></div>
+    <div th:replace="~{components/css}"></div>
 </head>
 <body data-bs-theme="dark">
 
-<div th:replace="components/sidebar"></div>
+<div th:replace="~{components/sidebar}"></div>
 
 
 <main class="offset-sm-0 col-sm-12 offset-xl-1 col-xl-11">
 
-    <div th:replace="components/search-content"></div>
-    <div th:replace="components/menu-content"></div>
+    <div th:replace="~{components/search-content}"></div>
+    <div th:replace="~{components/menu-content}"></div>
 
     <!--  header  -->
     <div class="container-fluid">
@@ -153,10 +153,10 @@
     </div>
     <!--  catalogs end  -->
 
-    <div th:replace="components/footer"></div>
+    <div th:replace="~{components/footer}"></div>
 </main>
 
-<div th:replace="components/js"></div>
+<div th:replace="~{components/js}"></div>
 
 </body>
 </html>
